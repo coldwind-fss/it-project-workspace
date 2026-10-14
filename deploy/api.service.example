@@ -1,0 +1,14 @@
+[Unit]
+Description=IT Project Workspace API
+After=network.target
+[Service]
+User=itpw
+WorkingDirectory=/opt/it-project-workspace/current
+EnvironmentFile=/etc/it-project-workspace/workspace.env
+ExecStart=/opt/it-project-workspace/venv/bin/python scripts/serve.py
+Restart=on-failure
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+[Install]
+WantedBy=multi-user.target

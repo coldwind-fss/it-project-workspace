@@ -1,0 +1,1091 @@
+{
+  "REQUIREMENT_STATUS_OPTIONS": [
+    "待处理",
+    "进行中",
+    "待交付",
+    "已交付",
+    "已关闭"
+  ],
+  "REQUIREMENT_STATUS_MAP": {
+    "待评估": "待处理",
+    "已立项": "待处理",
+    "已排期": "待处理",
+    "需求确认中": "进行中",
+    "设计中": "进行中",
+    "开发中": "进行中",
+    "联调中": "进行中",
+    "测试中": "进行中",
+    "迭代中": "进行中",
+    "维护中": "进行中",
+    "暂停中": "进行中",
+    "active": "进行中",
+    "paused": "进行中",
+    "待上线": "待交付",
+    "已上线": "已交付",
+    "已关闭": "已关闭",
+    "已归档": "已关闭",
+    "archived": "已关闭"
+  },
+  "REQUIREMENT_TYPE_MAP": {
+    "新功能": "新增功能",
+    "能力新增": "新增功能",
+    "优化改进": "功能优化",
+    "能力优化": "功能优化",
+    "Bug修复": "问题修复",
+    "UI调整": "功能优化",
+    "接口对接": "技术建设",
+    "技术重构": "功能优化",
+    "需求变更": "业务确认",
+    "需求对接": "业务确认",
+    "技术方案验证": "技术建设",
+    "功能测试": "验证交付"
+  },
+  "REQUIREMENT_TYPE_OPTIONS": [
+    "业务确认",
+    "需求重构",
+    "产品设计",
+    "技术建设",
+    "新增功能",
+    "功能优化",
+    "问题修复",
+    "验证交付"
+  ],
+  "REQUIREMENT_CHANGE_OBJECT_MAP": {
+    "UI交互": "页面交互",
+    "技术基础": "系统基础"
+  },
+  "REQUIREMENT_CHANGE_OBJECT_OPTIONS": [
+    "模块",
+    "功能",
+    "字段",
+    "流程",
+    "页面交互",
+    "接口数据",
+    "系统基础",
+    "其他"
+  ],
+  "REQUIREMENT_IMPACT_OPTIONS": [
+    "核心",
+    "重要",
+    "常规"
+  ],
+  "REQUIREMENT_WORKLOAD_OPTIONS": [
+    "大",
+    "中",
+    "小"
+  ],
+  "PROJECT_SOLUTION_TYPES": [
+    {
+      "key": "workflow_automation",
+      "label": "工作流自动化",
+      "description": "监听、同步、审批和其他流程自动化"
+    },
+    {
+      "key": "custom_application",
+      "label": "自研应用 / 系统",
+      "description": "内部开发的小程序、应用或业务系统"
+    },
+    {
+      "key": "software_replacement",
+      "label": "软件平替",
+      "description": "替代外部软件或已有系统"
+    },
+    {
+      "key": "data_integration",
+      "label": "数据 / 报表 / 集成",
+      "description": "数据处理、报表、接口和同步项目"
+    },
+    {
+      "key": "ai_agent",
+      "label": "AI / 智能体",
+      "description": "AI、智能体和需要效果验证的项目"
+    },
+    {
+      "key": "technical_foundation",
+      "label": "技术基础设施",
+      "description": "稳定性、安全、部署和基础能力"
+    },
+    {
+      "key": "unknown",
+      "label": "待分类",
+      "description": "历史项目尚未完成类型确认"
+    }
+  ],
+  "PROJECT_SOLUTION_TYPE_MAP": {
+    "new_app_platform": "custom_application",
+    "custom": "custom_application",
+    "existing_capability": "custom_application",
+    "workflow": "workflow_automation",
+    "rpa": "workflow_automation",
+    "data": "data_integration",
+    "integration": "data_integration",
+    "ai": "ai_agent",
+    "agent": "ai_agent"
+  },
+  "L3_ITEM_KINDS": [
+    {
+      "key": "initial_build",
+      "label": "初始建设"
+    },
+    {
+      "key": "feature",
+      "label": "新功能 / 模块"
+    },
+    {
+      "key": "bugfix",
+      "label": "问题修复"
+    },
+    {
+      "key": "enhancement",
+      "label": "功能优化"
+    },
+    {
+      "key": "integration",
+      "label": "接口 / 数据集成"
+    },
+    {
+      "key": "design",
+      "label": "产品设计"
+    },
+    {
+      "key": "operation",
+      "label": "运营维护"
+    }
+  ],
+  "PHASE_STATUS_OPTIONS": [
+    {
+      "key": "todo",
+      "label": "待开始"
+    },
+    {
+      "key": "in_progress",
+      "label": "进行中"
+    },
+    {
+      "key": "blocked",
+      "label": "已阻塞"
+    },
+    {
+      "key": "done",
+      "label": "已完成"
+    },
+    {
+      "key": "skipped",
+      "label": "已跳过"
+    }
+  ],
+  "PERMISSION_GROUPS": [
+    {
+      "key": "requirements",
+      "label": "需求列表"
+    },
+    {
+      "key": "kanban",
+      "label": "需求看板"
+    },
+    {
+      "key": "knowledge",
+      "label": "知识库"
+    },
+    {
+      "key": "changelog",
+      "label": "变更日志"
+    },
+    {
+      "key": "sprints",
+      "label": "迭代管理"
+    },
+    {
+      "key": "workspace",
+      "label": "工作台"
+    },
+    {
+      "key": "intake",
+      "label": "业务协作"
+    },
+    {
+      "key": "demandPool",
+      "label": "需求池"
+    },
+    {
+      "key": "notifications",
+      "label": "通知配置"
+    },
+    {
+      "key": "operations",
+      "label": "操作记录"
+    },
+    {
+      "key": "system",
+      "label": "系统管理"
+    }
+  ],
+  "DEFAULT_DEVELOPER_PERMISSIONS": [
+    "requirements",
+    "kanban",
+    "knowledge",
+    "changelog",
+    "sprints",
+    "workspace",
+    "intake",
+    "demandPool",
+    "notifications"
+  ],
+  "SUPER_ADMIN_NAMES": [
+    "Ben",
+    "路得",
+    "惜君"
+  ],
+  "DEVELOPERS": [
+    {
+      "name": "十叶-冯硕硕",
+      "shortName": "冯硕硕",
+      "nick": "十叶",
+      "role": "developer",
+      "aliases": [
+        "十叶",
+        "冯硕硕",
+        "十叶-冯硕硕"
+      ]
+    },
+    {
+      "name": "星河-李子文",
+      "shortName": "李子文",
+      "nick": "星河",
+      "role": "developer",
+      "aliases": [
+        "星河",
+        "李子文",
+        "星河-李子文"
+      ]
+    },
+    {
+      "name": "惜君-吴旭骏",
+      "shortName": "吴旭骏",
+      "nick": "惜君",
+      "role": "developer",
+      "aliases": [
+        "惜君",
+        "吴旭骏",
+        "吴俊惜",
+        "惜君-吴旭骏",
+        "惜君-吴俊惜"
+      ]
+    }
+  ],
+  "ADMINS": [
+    "路得",
+    "桑葚",
+    "薏米",
+    "Ben",
+    "十叶",
+    "冯硕硕",
+    "十叶-冯硕硕",
+    "星河",
+    "李子文",
+    "星河-李子文",
+    "惜君",
+    "吴旭骏",
+    "惜君-吴旭骏",
+    "吴俊惜",
+    "惜君-吴俊惜"
+  ],
+  "BUSINESS_INTAKE_KIND_OPTIONS": [
+    {
+      "key": "new_requirement",
+      "label": "新需求"
+    },
+    {
+      "key": "issue",
+      "label": "问题反馈"
+    },
+    {
+      "key": "feedback",
+      "label": "补充意见"
+    },
+    {
+      "key": "delivery_confirmation",
+      "label": "确认交付"
+    }
+  ],
+  "BUSINESS_INTAKE_STATUS_OPTIONS": [
+    {
+      "key": "submitted",
+      "label": "已提交"
+    },
+    {
+      "key": "in_review",
+      "label": "处理中"
+    },
+    {
+      "key": "accepted",
+      "label": "已受理"
+    },
+    {
+      "key": "resolved",
+      "label": "已解决"
+    },
+    {
+      "key": "rejected",
+      "label": "暂不处理"
+    },
+    {
+      "key": "closed",
+      "label": "已关闭"
+    }
+  ],
+  "BUSINESS_INTAKE_KIND_LABELS": {
+    "new_requirement": "新需求",
+    "issue": "问题反馈",
+    "feedback": "补充意见",
+    "delivery_confirmation": "确认交付"
+  },
+  "BUSINESS_INTAKE_STATUS_LABELS": {
+    "submitted": "已提交",
+    "in_review": "处理中",
+    "accepted": "已受理",
+    "resolved": "已解决",
+    "rejected": "暂不处理",
+    "closed": "已关闭"
+  },
+  "BUSINESS_INTAKE_REQUIREMENT_TYPE": {
+    "new_requirement": "新增功能",
+    "issue": "问题修复",
+    "feedback": "业务确认",
+    "delivery_confirmation": "验证交付"
+  },
+  "BUSINESS_URGENCY_OPTIONS": [
+    {
+      "key": "urgent",
+      "label": "尽快处理"
+    },
+    {
+      "key": "planned",
+      "label": "计划内处理"
+    },
+    {
+      "key": "normal",
+      "label": "一般事项"
+    }
+  ],
+  "BUSINESS_URGENCY_LABELS": {
+    "urgent": "尽快处理",
+    "planned": "计划内处理",
+    "normal": "一般事项"
+  },
+  "BUSINESS_COLLABORATION_KIND_OPTIONS": [
+    {
+      "key": "resource_request",
+      "label": "资料提供"
+    },
+    {
+      "key": "clarification",
+      "label": "规则确认"
+    },
+    {
+      "key": "business_feedback",
+      "label": "意见反馈"
+    },
+    {
+      "key": "issue",
+      "label": "问题反馈"
+    },
+    {
+      "key": "acceptance",
+      "label": "测试验收"
+    }
+  ],
+  "BUSINESS_COLLABORATION_KIND_LABELS": {
+    "resource_request": "资料提供",
+    "clarification": "规则确认",
+    "business_feedback": "意见反馈",
+    "issue": "问题反馈",
+    "acceptance": "测试验收"
+  },
+  "BUSINESS_COLLABORATION_STATUS_OPTIONS": [
+    {
+      "key": "open",
+      "label": "待处理"
+    },
+    {
+      "key": "waiting_business",
+      "label": "待业务回复"
+    },
+    {
+      "key": "waiting_it",
+      "label": "待 IT 处理"
+    },
+    {
+      "key": "resolved",
+      "label": "已完成"
+    },
+    {
+      "key": "closed",
+      "label": "已关闭"
+    }
+  ],
+  "BUSINESS_COLLABORATION_STATUS_LABELS": {
+    "open": "待处理",
+    "waiting_business": "待业务回复",
+    "waiting_it": "待 IT 处理",
+    "resolved": "已完成",
+    "closed": "已关闭"
+  },
+  "BUSINESS_COLLABORATION_MESSAGE_TYPES": {
+    "message": "讨论消息",
+    "delivery": "交付回执",
+    "issue": "问题反馈",
+    "acceptance": "验收确认",
+    "system": "系统记录"
+  },
+  "DEMAND_POOL_STATUS_OPTIONS": [
+    {
+      "key": "pending_evaluation",
+      "label": "待初筛"
+    },
+    {
+      "key": "evaluating",
+      "label": "IT初筛中"
+    },
+    {
+      "key": "awaiting_supplement",
+      "label": "待业务补充"
+    },
+    {
+      "key": "business_review",
+      "label": "业务负责人评估中"
+    },
+    {
+      "key": "review_complete",
+      "label": "待综合决策"
+    },
+    {
+      "key": "awaiting_confirmation",
+      "label": "待正式立项"
+    },
+    {
+      "key": "business_confirmed",
+      "label": "业务已确认"
+    },
+    {
+      "key": "ready_for_l3",
+      "label": "待正式立项"
+    },
+    {
+      "key": "poc",
+      "label": "PoC验证中"
+    },
+    {
+      "key": "deferred",
+      "label": "暂缓"
+    },
+    {
+      "key": "not_implemented",
+      "label": "不实施"
+    },
+    {
+      "key": "converted",
+      "label": "已转正式L3"
+    },
+    {
+      "key": "merged",
+      "label": "已合并"
+    },
+    {
+      "key": "ordinary_task",
+      "label": "已转普通事项"
+    }
+  ],
+  "DEMAND_POOL_STATUS_LABELS": {
+    "pending_evaluation": "待初筛",
+    "evaluating": "IT初筛中",
+    "awaiting_supplement": "待业务补充",
+    "business_review": "业务负责人评估中",
+    "review_complete": "待综合决策",
+    "awaiting_confirmation": "待正式立项",
+    "business_confirmed": "业务已确认",
+    "ready_for_l3": "待正式立项",
+    "poc": "PoC验证中",
+    "deferred": "暂缓",
+    "not_implemented": "不实施",
+    "converted": "已转正式L3",
+    "merged": "已合并",
+    "ordinary_task": "已转普通事项"
+  },
+  "DEMAND_POOL_DECISION_OPTIONS": [
+    {
+      "key": "implement",
+      "label": "实施",
+      "status": "awaiting_confirmation"
+    },
+    {
+      "key": "poc",
+      "label": "PoC",
+      "status": "poc"
+    },
+    {
+      "key": "defer",
+      "label": "暂缓",
+      "status": "deferred"
+    },
+    {
+      "key": "reject",
+      "label": "不承接",
+      "status": "not_implemented"
+    },
+    {
+      "key": "merge",
+      "label": "合并已有需求",
+      "status": "merged"
+    },
+    {
+      "key": "ordinary",
+      "label": "转普通事项",
+      "status": "ordinary_task"
+    }
+  ],
+  "DEMAND_POOL_DECISION_LABELS": {
+    "implement": "实施",
+    "poc": "PoC",
+    "defer": "暂缓",
+    "reject": "不承接",
+    "merge": "合并已有需求",
+    "ordinary": "转普通事项"
+  },
+  "DEMAND_POOL_PRIORITY_OPTIONS": [
+    {
+      "key": "urgent",
+      "label": "希望尽快"
+    },
+    {
+      "key": "planned",
+      "label": "计划内"
+    },
+    {
+      "key": "normal",
+      "label": "暂无明确时间"
+    }
+  ],
+  "DEMAND_POOL_PRIORITY_LABELS": {
+    "urgent": "希望尽快",
+    "planned": "计划内",
+    "normal": "暂无明确时间"
+  },
+  "DEMAND_POOL_INTAKE_LEVEL_OPTIONS": [
+    {
+      "key": "L2",
+      "label": "L2 项目"
+    },
+    {
+      "key": "L3",
+      "label": "L3 新功能 / 复杂需求重构"
+    }
+  ],
+  "DEMAND_POOL_INTAKE_LEVEL_LABELS": {
+    "L2": "L2 项目",
+    "L3": "L3 新功能 / 复杂需求重构"
+  },
+  "DEMAND_COLLECTION_JUDGMENT_OPTIONS": [
+    {
+      "key": "pending",
+      "label": "待判断"
+    },
+    {
+      "key": "valuable",
+      "label": "有价值，转入需求池"
+    },
+    {
+      "key": "needs_clarification",
+      "label": "需要补充"
+    },
+    {
+      "key": "duplicate",
+      "label": "重复需求"
+    },
+    {
+      "key": "not_feasible",
+      "label": "暂不可行"
+    },
+    {
+      "key": "not_adopted",
+      "label": "暂不采纳"
+    }
+  ],
+  "DEMAND_COLLECTION_JUDGMENT_LABELS": {
+    "pending": "待判断",
+    "valuable": "有价值，转入需求池",
+    "needs_clarification": "需要补充",
+    "duplicate": "重复需求",
+    "not_feasible": "暂不可行",
+    "not_adopted": "暂不采纳"
+  },
+  "DEMAND_CONFIRMATION_STATUS_LABELS": {
+    "pending": "待业务确认",
+    "confirmed": "业务已确认",
+    "changes_requested": "业务退回修改",
+    "cancelled": "已取消"
+  },
+  "DEMAND_POOL_OUTCOME_STAGES": {
+    "goal": {
+      "label": "上线前目标基线",
+      "title": "请确认上线前目标",
+      "description": "只需确认上线后最希望看到的一个方向；没有数字也可以。"
+    },
+    "day7": {
+      "label": "上线 3 天回执",
+      "title": "请确认上线三天使用情况",
+      "description": "30 秒告诉 IT 目前是否能正常使用、是否解决原问题；如有细节可补充说明。"
+    },
+    "day30": {
+      "label": "上线 30 天价值验证",
+      "title": "请确认上线一个月实际效果",
+      "description": "根据实际使用情况判断是否产生预期改善。"
+    }
+  },
+  "DEMAND_POOL_REVIEW_ROLE_LABELS": {
+    "leader": "直属领导评估",
+    "department_owner": "部门负责人评估",
+    "existing_communication": "复用已有业务沟通"
+  },
+  "DEMAND_POOL_REVIEW_STATUS_LABELS": {
+    "pending": "待评估",
+    "submitted": "已提交",
+    "cancelled": "已取消"
+  },
+  "DEMAND_POOL_REVIEW_DECISION_OPTIONS": [
+    {
+      "key": "support",
+      "label": "有必要实施"
+    },
+    {
+      "key": "adjust",
+      "label": "有必要，但建议调整"
+    },
+    {
+      "key": "reject",
+      "label": "暂无实施必要"
+    }
+  ],
+  "DEMAND_POOL_REVIEW_DECISION_LABELS": {
+    "support": "有必要实施",
+    "adjust": "有必要，但建议调整",
+    "reject": "暂无实施必要"
+  },
+  "DEMAND_POOL_L3_BRANCH_RELATIONS": {
+    "shared": "共用主线价值口径",
+    "independent": "独立价值口径"
+  },
+  "DEMAND_POOL_L3_BRANCH_STATUS_LABELS": {
+    "draft": "待分流",
+    "business_review": "待业务评估",
+    "it_review": "待 IT 决策",
+    "approved": "已确认实施",
+    "formalized": "已生成正式 L3",
+    "backfilled": "历史已补录",
+    "removed": "已移除"
+  },
+  "DEMAND_POOL_SOLUTION_TYPES": [
+    {
+      "key": "workflow_automation",
+      "label": "业务流程自动化",
+      "description": "把人工、表格或群消息流程变成可执行的系统流程。"
+    },
+    {
+      "key": "new_app_platform",
+      "label": "新应用 / 新平台",
+      "description": "从零建设一个独立应用或平台。"
+    },
+    {
+      "key": "software_replacement",
+      "label": "现有软件平替",
+      "description": "替换正在使用的市场软件或外部系统。"
+    },
+    {
+      "key": "existing_capability",
+      "label": "现有系统新增能力",
+      "description": "在已有项目中增加较大能力或模块。"
+    },
+    {
+      "key": "complex_refactor",
+      "label": "复杂重构",
+      "description": "重做流程、架构或核心模块。"
+    },
+    {
+      "key": "data_integration",
+      "label": "数据 / 报表 / 集成",
+      "description": "数据看板、接口打通、同步或指标建设。"
+    },
+    {
+      "key": "technical_foundation",
+      "label": "技术基础 / 稳定性 / 安全",
+      "description": "解决稳定性、性能、安全或基础设施问题。"
+    }
+  ],
+  "DEMAND_POOL_AI_OPTIONS": [
+    {
+      "key": "none",
+      "label": "不涉及 AI"
+    },
+    {
+      "key": "consider",
+      "label": "可考虑 AI 辅助"
+    },
+    {
+      "key": "core",
+      "label": "AI 是核心能力"
+    },
+    {
+      "key": "not_suitable",
+      "label": "当前不适合使用 AI"
+    }
+  ],
+  "DEMAND_POOL_AI_LABELS": {
+    "none": "不涉及 AI",
+    "consider": "可考虑 AI 辅助",
+    "core": "AI 是核心能力",
+    "not_suitable": "当前不适合使用 AI"
+  },
+  "DEMAND_POOL_POC_OPTIONS": [
+    {
+      "key": "none",
+      "label": "不需要 PoC"
+    },
+    {
+      "key": "recommended",
+      "label": "建议先做 PoC"
+    },
+    {
+      "key": "required",
+      "label": "必须先完成 PoC"
+    }
+  ],
+  "DEMAND_POOL_POC_LABELS": {
+    "none": "不需要 PoC",
+    "recommended": "建议先做 PoC",
+    "required": "必须先完成 PoC"
+  },
+  "DEMAND_POOL_IMPACT_SCOPE_OPTIONS": [
+    {
+      "key": "single_person",
+      "label": "单人 / 小范围"
+    },
+    {
+      "key": "single_department",
+      "label": "单部门"
+    },
+    {
+      "key": "cross_department",
+      "label": "跨部门"
+    },
+    {
+      "key": "company",
+      "label": "全公司"
+    }
+  ],
+  "DEMAND_POOL_COMPLEXITY_OPTIONS": [
+    {
+      "key": "low",
+      "label": "低"
+    },
+    {
+      "key": "medium",
+      "label": "中"
+    },
+    {
+      "key": "high",
+      "label": "高"
+    }
+  ],
+  "DEMAND_POOL_VALUE_LEVEL_LABELS": {
+    "light": "轻量记录",
+    "standard": "成果假设",
+    "focused": "重点验证"
+  },
+  "DEMAND_POOL_NEXT_ACTION_OPTIONS": [
+    {
+      "key": "supplement",
+      "label": "请业务补充信息"
+    },
+    {
+      "key": "business_review",
+      "label": "发起业务评估"
+    },
+    {
+      "key": "poc_register",
+      "label": "登记 PoC 结论"
+    },
+    {
+      "key": "final_review",
+      "label": "进入综合决策"
+    },
+    {
+      "key": "merge",
+      "label": "合并已有需求"
+    },
+    {
+      "key": "ordinary",
+      "label": "转普通工作事项"
+    }
+  ],
+  "DEMAND_POOL_TEMPLATE_QUESTIONS": {
+    "workflow_automation": [
+      {
+        "key": "currentProcess",
+        "label": "现在通常怎么处理？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "frequency",
+        "label": "大概多久发生一次？",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "painPoint",
+        "label": "哪一步最费时间或容易出错？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "users",
+        "label": "哪些岗位会使用？",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "new_app_platform": [
+      {
+        "key": "users",
+        "label": "谁会使用？",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "coreScenario",
+        "label": "最重要的使用场景是什么？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "mvp",
+        "label": "第一版最希望先解决什么？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "businessOwner",
+        "label": "谁负责日常运营和确认？",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "software_replacement": [
+      {
+        "key": "currentSoftware",
+        "label": "现在使用什么软件？",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "replaceReason",
+        "label": "为什么需要替换？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "mustHave",
+        "label": "哪些功能绝对不能缺少？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "users",
+        "label": "大约有多少人使用？",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "existing_capability": [
+      {
+        "key": "blockedStep",
+        "label": "当前具体卡在哪里？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "expectedChange",
+        "label": "希望改变哪一步？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "protectedFunctions",
+        "label": "哪些现有功能不能受影响？",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "complex_refactor": [
+      {
+        "key": "currentProblem",
+        "label": "当前问题和影响是什么？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "affectedScope",
+        "label": "会影响哪些模块或人员？",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "switchConstraint",
+        "label": "切换时有什么不能中断的工作？",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "data_integration": [
+      {
+        "key": "desiredResult",
+        "label": "希望看到或打通什么结果？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "dataSource",
+        "label": "现在数据从哪里来？",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "refreshFrequency",
+        "label": "多久需要更新一次？",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "viewers",
+        "label": "哪些人需要查看或使用？",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "technical_foundation": [
+      {
+        "key": "impact",
+        "label": "问题影响了谁或什么工作？",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "frequency",
+        "label": "问题多久发生一次？",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "temporaryFix",
+        "label": "现在有没有临时处理办法？",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  },
+  "BUSINESS_ATTACHMENT_EXTENSIONS": [
+    ".7z",
+    ".avi",
+    ".bmp",
+    ".csv",
+    ".doc",
+    ".docx",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".mkv",
+    ".mov",
+    ".mp4",
+    ".pdf",
+    ".png",
+    ".ppt",
+    ".pptx",
+    ".rar",
+    ".svg",
+    ".txt",
+    ".webm",
+    ".webp",
+    ".xls",
+    ".xlsx",
+    ".zip"
+  ],
+  "POSTLAUNCH_DELIVERY_KINDS": [
+    "上线",
+    "其他交付",
+    "已交付",
+    "试运行"
+  ],
+  "POSTLAUNCH_ISSUE_STATUSES": [
+    "处理中",
+    "已关闭",
+    "待核实",
+    "待验证"
+  ],
+  "POSTLAUNCH_SEVERITIES": [
+    "一般",
+    "重大",
+    "重要"
+  ],
+  "SHARED_ACTIVITY_TYPES": {
+    "work_progress": "工作进展",
+    "issue": "遇到问题",
+    "delivery": "交付回执",
+    "next_step": "下一步",
+    "feedback": "业务反馈",
+    "status_change": "状态变化"
+  },
+  "SHARED_ACTIVITY_LOG_TYPES": {
+    "work_progress": "工作进展",
+    "issue": "遇到问题",
+    "delivery": "交付说明",
+    "next_step": "下一步",
+    "feedback": "工作进展",
+    "status_change": "工作进展"
+  },
+  "DEMAND_POOL_SOLUTION_TYPE_LABELS": {
+    "workflow_automation": "业务流程自动化",
+    "new_app_platform": "新应用 / 新平台",
+    "software_replacement": "现有软件平替",
+    "existing_capability": "现有系统新增能力",
+    "complex_refactor": "复杂重构",
+    "data_integration": "数据 / 报表 / 集成",
+    "technical_foundation": "技术基础 / 稳定性 / 安全"
+  },
+  "DELIVERY_STANDARD_TEMPLATE_LABELS": {
+    "workflow_automation": "业务流程自动化",
+    "custom_application": "新应用 / 新平台",
+    "new_app_platform": "新应用 / 新平台",
+    "software_replacement": "现有软件平替",
+    "existing_capability": "现有系统新增能力",
+    "complex_refactor": "复杂重构",
+    "data_integration": "数据 / 报表 / 集成",
+    "ai_agent": "AI / 智能体",
+    "technical_foundation": "技术基础 / 稳定性 / 安全",
+    "custom": "通用交付标准"
+  },
+  "DELIVERY_STANDARD_TEMPLATE_ALIASES": {
+    "new_app_platform": "custom_application",
+    "custom": "custom_application",
+    "workflow": "workflow_automation",
+    "rpa": "workflow_automation",
+    "data": "data_integration",
+    "integration": "data_integration",
+    "ai": "ai_agent",
+    "agent": "ai_agent"
+  },
+  "DEMAND_POOL_OUTCOME_STAGE_LABELS": {
+    "goal": "上线前目标基线",
+    "day7": "上线 3 天回执",
+    "day30": "上线 30 天价值验证"
+  }
+}

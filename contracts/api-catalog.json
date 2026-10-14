@@ -1,0 +1,29 @@
+{
+  "source": "Generated from application routes and Pydantic/OpenAPI; includes the explicit preview session operation",
+  "operations": [
+    {
+      "method": "GET",
+      "path": "/",
+      "owner": "platform",
+      "operationId": "spa__get",
+      "security": [],
+      "responseModel": "None"
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "owner": "platform",
+      "operationId": "health_api_health_get",
+      "security": [],
+      "responseModel": "None"
+    },
+    {
+      "method": "GET",
+      "path": "/api/ready",
+      "owner": "platform",
+      "operationId": "ready_api_ready_get",
+      "security": [],
+      "responseModel": "None"
+    }
+  ]
+}
