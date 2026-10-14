@@ -74,7 +74,10 @@ def prepare():
     from itpm.infrastructure.database import Database
     db=Database(Settings(url))
     try:
-        if not db.check():raise RuntimeError('Database readiness failed: '+db.ready_code)
+        if not db.check():
+            (folder/'schema-differences.json').write_text(json.dumps(db.differences,ensure_ascii=False,indent=2),encoding='utf-8')
+            print(json.dumps({'readiness':db.ready_code,'differences':db.differences},ensure_ascii=False))
+            raise RuntimeError('Database readiness failed: '+db.ready_code)
     finally:db.close()
     print('Dedicated synthetic database prepared; application role restricted; no credentials printed.')
 
